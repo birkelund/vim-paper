@@ -131,7 +131,7 @@ Hi Comment grey NONE italic
 Hi Conceal NONE NONE NONE
 Hi Constant black NONE NONE
 Hi Cursor NONE lgrey1 NONE
-Hi CursorLine NONE lbackground NONE
+Hi CursorLine NONE background NONE
 Hi CursorLineNR black NONE bold
 Hi Directory purple NONE NONE
 Hi ErrorMsg red NONE bold
