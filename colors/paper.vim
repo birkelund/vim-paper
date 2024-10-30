@@ -44,7 +44,7 @@ function! s:Hi(group, fg_name, bg_name, gui, ...)
     let sp = 'NONE'
   endif
 
-  exe 'hi ' . a:group . ' guifg=' . fg . ' guibg=' . bg . ' gui=' . style . ' guisp=' . sp
+  exe 'hi ' . a:group . ' cterm=' . style . ' guifg=' . fg . ' guibg=' . bg . ' gui=' . style . ' guisp=' . sp
 endfunction
 
 " A temporary command is used to make it easier/less verbose to define highlight
@@ -127,7 +127,7 @@ endif
 
 " Generic highlight groups
 Hi ColorColumn NONE lbackground NONE
-Hi Comment grey NONE NONE
+Hi Comment grey NONE italic
 Hi Conceal NONE NONE NONE
 Hi Constant black NONE NONE
 Hi Cursor NONE lgrey1 NONE
@@ -137,7 +137,7 @@ Hi Directory purple NONE NONE
 Hi ErrorMsg red NONE bold
 Hi FoldColumn black background NONE
 Hi Identifier black NONE NONE
-Hi Include black NONE bold
+Hi Include black NONE italic
 Hi Keyword black NONE bold
 Hi LineNr black NONE NONE
 Hi Macro orange NONE NONE
@@ -148,7 +148,7 @@ Hi Normal black background NONE
 Hi NormalFloat black background NONE
 Hi Bold black NONE bold
 Hi Number blue NONE NONE
-Hi Operator black NONE NONE
+Hi Operator black NONE bold
 Hi Pmenu black lgrey1 NONE
 Hi PmenuSel black lgrey2 bold
 Hi PreProc black NONE NONE
@@ -176,6 +176,7 @@ Hi DiagnosticInfo green NONE NONE
 Hi DiagnosticSignInfo green NONE NONE
 Hi DiagnosticWarn orange NONE NONE
 Hi DiagnosticError red NONE NONE
+Hi cIncluded green NONE italic
 
 hi! link NotifyINFOIcon DiagnosticInfo
 hi! link NotifyINFOTitle DiagnosticInfo
