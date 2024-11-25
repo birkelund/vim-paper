@@ -67,10 +67,13 @@ let s:colors = {
 \  'lgrey3': '#aaaaaa',
 \  'yellow': '#b58900',
 \  'lyellow': '#f2de91',
+\  'llyellow': '#eeeea7',
+\  'dyellow': '#999957',
 \  'orange': '#a55000',
 \  'purple': '#5c21a5',
 \  'white': '#ffffff',
-\  'cyan': '#158c86'
+\  'cyan': '#158c86',
+\  'lcyan': '#eefeff'
 \ }
 
 " We require/expect true colour support, and make no attempt at supporting UIs
@@ -130,16 +133,16 @@ Hi ColorColumn NONE lbackground NONE
 Hi Comment grey NONE italic
 Hi Conceal NONE NONE NONE
 Hi Constant blue NONE NONE
-Hi Cursor NONE lgrey1 NONE
+Hi Cursor NONE llyellow NONE
 Hi CursorLine NONE lbackground NONE
-Hi CursorLineNR background black bold
+Hi CursorLineNR black NONE bold
 Hi Directory purple NONE NONE
 Hi ErrorMsg red NONE bold
 Hi FoldColumn black background NONE
 Hi Identifier black NONE NONE
 Hi Include black NONE italic
 Hi Keyword black NONE bold
-Hi LineNr black NONE NONE
+Hi LineNr dyellow NONE NONE
 Hi Macro orange NONE NONE
 Hi MatchParen NONE NONE bold
 Hi MoreMsg black NONE NONE
@@ -161,7 +164,7 @@ Hi SpellBad red NONE bold,undercurl
 Hi SpellCap purple NONE undercurl
 Hi SpellLocal green NONE undercurl
 Hi SpellRare purple NONE undercurl
-Hi StatusLine black lgrey1 NONE
+Hi StatusLine black lcyan NONE
 Hi StatusLineNC black lgrey1 NONE
 Hi String green NONE NONE
 Hi TabLine dgrey lgrey2 NONE
